@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
         <style>
         #map {
-            width: 1441px;
+            width: 1082px;
             height: 827px;
         }
         </style>
@@ -35,8 +35,8 @@
         <script src="data/redvial_casablanca_4.js"></script>
         <script>
         var map = L.map('map', {
-            zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[-33.478529023767855,-71.77182195342431],[-33.12762629195827,-71.03949673118245]]);
+            zoomControl:true, maxZoom:14, minZoom:8
+        }).fitBounds([[-33.495930964825426,-71.74357730447754],[-33.14509840658226,-71.19395170335076]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -50,8 +50,8 @@
             pane: 'pane_OpenStreetMap_0',
             opacity: 1.0,
             attribution: '',
-            minZoom: 1,
-            maxZoom: 28,
+            minZoom: 8,
+            maxZoom: 14,
             minNativeZoom: 0,
             maxNativeZoom: 19
         });
